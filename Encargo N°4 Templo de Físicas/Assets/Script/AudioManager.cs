@@ -1,0 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.UI;
+using TMPro;
+public class AudioManager : MonoBehaviour
+{
+    public TMP_Text text;
+
+    public AudioMixer audioMixer;
+    public List<Slider> slider = new List<Slider>();
+    public List<AudioSource> audioSource = new List<AudioSource>();
+    public List<AudioClip> clip = new List<AudioClip>();
+    public List<AudioMixerGroup> mixerGroup = new List<AudioMixerGroup>();
+
+    private void Update()
+    {
+        audioMixer.SetFloat("masterVol", slider[0].value);
+        audioMixer.SetFloat("BMGVol", slider[1].value);
+        audioMixer.SetFloat("SFXVol", slider[2].value);
+    }
+}
