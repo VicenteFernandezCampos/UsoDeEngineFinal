@@ -14,11 +14,7 @@ public class AudioManager : MonoBehaviour
     public AudioMixerGroup SFXMixerGroup;
     public AudioSource BMGAudioSource;
     public AudioSource SFXAudioSource;
-    public AudioClip audioClip0;
-    public AudioClip audioClip1;
-    public AudioClip audioClip2;
-    public AudioClip audioClip3;
-    public AudioClip audioClip4;
+    public List<AudioClip> clip = new List<AudioClip>();
 
     private void Update()
     {
