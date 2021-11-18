@@ -7,6 +7,8 @@ using TMPro;
 public class AudioManager : MonoBehaviour
 {
     public TMP_Text text;
+    public Slider masterVolSlider;
+
     public AudioMixer audioMixer;
     public AudioMixerGroup BMGMixerGroup;
     public AudioMixerGroup SFXMixerGroup;
@@ -20,7 +22,6 @@ public class AudioManager : MonoBehaviour
 
     private void Update()
     {
-        float value;
-
+        audioMixer.SetFloat("masterVol", masterVolSlider.value);
     }
 }
