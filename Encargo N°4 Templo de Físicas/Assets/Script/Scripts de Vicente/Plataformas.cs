@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Plataformas : MonoBehaviour
 {
+    public GameObject point1, point2;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
