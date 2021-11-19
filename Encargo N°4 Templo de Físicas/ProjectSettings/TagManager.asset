@@ -6,6 +6,7 @@ TagManager:
   tags:
   - IsGorunded
   - IsGrounded
+  - Object
   layers:
   - Default
   - TransparentFX
